@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi RPG </title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1770820768556-72f41e4598ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJtdyUyMDElMjBzZXJpZXN8ZW58MHx8MHx8fDA%3D');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.logo{
+    width:260px;
+    margin-bottom:25px;
+    filter:drop-shadow(0 0 25px #ffd000);
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.03);
+    }
+}
+
+header h1{
+    font-size:70px;
+    color:#ffd000;
+    text-shadow:0 0 20px #ffd000;
+}
+
+header p{
+    margin-top:15px;
+    font-size:22px;
+    color:#ddd;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 40px;
+    background:#ffd000;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#ffd000;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #ffd000;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #ffd000;
+}
+
+.card h3{
+    color:#ffd000;
+    margin-bottom:15px;
+}
+
+.tarif{
+    font-size:35px;
+    margin:15px 0;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    border:2px solid #ffd000;
+}
+
+.contact{
+    text-align:center;
+    line-height:2;
+    font-size:20px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+    border-top:2px solid #ffd000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
+
+    <h1>TAXI RPG </h1>
+
+    <p>Rapid • Realist • Roleplay</p>
+
+    <a href="#tarife" class="btn">Vezi Tarife</a>
+
+</header>
+
+<section id="tarife">
+
+    <h2 class="title">Tarife Taxi</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Tarif Zi</h3>
+            <div class="tarif">2.99 lei/km</div>
+            <p>Transport rapid în oraș.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tarif Noapte</h3>
+            <div class="tarif">3.99 lei/km</div>
+            <p>Disponibil non-stop.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pornire</h3>
+            <div class="tarif">5 lei</div>
+            <p>Preț minim cursă.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="title">Servicii</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Taxi Rpg</h3>
+            <p>Curse rapide.</p>
+        </div>
+
+        <div class="card">
+            <h3>Taxi VIP</h3>
+            <p>BMW-uri premium.</p>
+        </div>
+
+        <div class="card">
+            <h3>Roleplay Server</h3>
+            <p>Experiență realistă Car Parking.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="title">Flotă Taxi</h2>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1624720706089-7fe0605e360b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ym13JTIwMSUyMHNlcmllc3xlbnwwfHwwfHx8MA%3D%3D">
+
+        <img src="https://images.unsplash.com/photo-1689853537508-e428873f14fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJtdyUyMDElMjBzZXJpZXN8ZW58MHx8MHx8fDA%3D">
+
+        <img src="https://images.unsplash.com/photo-1677228446952-f526ec057b58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJtdyUyMDElMjBzZXJpZXN8ZW58MHx8MHx8fDA%3D">
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="title">Contact</h2>
+
+    <div class="contact">
+
+        <p>📞 Dispecerat: 0238 944</p>
+
+        <p>🚕 Taxi RPG Official</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Taxi RPG  • All Rights Reserved
+
+</footer>
+
+</body>
+</html>
